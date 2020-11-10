@@ -12,9 +12,9 @@ jobs:
       - run: npm run test
       - run: npm build
       - persist_to_worspace:
-        root: .
-        paths:
-          - .
+          root: .
+          paths:
+            - .
   deploy:
     <<: *vse
     steps:
